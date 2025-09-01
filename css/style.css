@@ -1,0 +1,109 @@
+body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a0018);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Blur before login */
+    #tournamentContent {
+      filter: blur(12px);
+      pointer-events: none;
+      transition: all 0.5s ease;
+    }
+    body.logged-in #tournamentContent {
+      filter: blur(0);
+      pointer-events: auto;
+    }
+
+    /* Success Popup */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(20, 20, 20, 0.95);
+      color: #ff3c78;
+      padding: 25px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(255, 60, 120, 0.6);
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      z-index: 2000;
+      animation: fadeIn 0.5s ease;
+      text-shadow: 0 0 8px rgba(255, 60, 120, 0.8);
+    }
+    @keyframes fadeIn {
+      from { opacity:0; transform: translate(-50%,-40%); }
+      to { opacity:1; transform: translate(-50%,-50%); }
+    }
+
+    header {
+      background: rgba(255, 20, 147, 0.08);
+      border-bottom: 1px solid rgba(255, 20, 147, 0.25);
+      backdrop-filter: blur(10px);
+      padding: 15px 20px;
+    }
+    header nav a {
+      color: #f8dfff; margin: 0 10px; text-decoration: none;
+    }
+    header nav a:hover { color: #ff3c78; }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(20,20,20,0.9);
+      border-radius: 16px;
+      margin: 40px auto;
+      box-shadow: 0 0 40px rgba(255, 60, 120, 0.4),
+                  inset 0 0 20px rgba(255, 60, 120, 0.1);
+    }
+    .hero h1 { color:#ff3c78; text-shadow:0 0 10px rgba(255,60,120,0.8); }
+
+    .btn-primary {
+      background: linear-gradient(45deg, #ff3c78, #ff1f63);
+      border:none; padding:14px 30px;
+      border-radius:8px; color:#fff;
+      font-weight:bold; letter-spacing:1px;
+      box-shadow: 0 0 25px rgba(255,60,120,0.5);
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover { 
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(255,60,120,0.7);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      margin-top: 40px;
+    }
+    footer .social-links a {
+      color:#f8dfff; margin:0 10px; font-size:1.3rem;
+      transition:0.3s;
+    }
+    footer .social-links a:hover { color:#ff3c78; }
+    
+    .text-pink { color: #ff3c78; }
+  .btn-pink {
+    background: #ff3c78;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+  .btn-pink:hover { background: #e03167; }
+
+  .highlight-box {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .highlight-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 60, 120, 0.5);
+  }
