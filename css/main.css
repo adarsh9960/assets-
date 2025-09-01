@@ -2646,8 +2646,8 @@ section,
 
 .contact .form-container-overlap {
   position: relative;
-  margin-top: -150px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 10px;
   z-index: 10;
 }
 
