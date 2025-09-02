@@ -122,3 +122,28 @@
       padding-top: 10px;
       color: var(--accent);
     }
+ /* Responsive Navbar */
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 60px; right: 0;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #333;
+      }
+      nav.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
