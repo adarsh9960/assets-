@@ -1,48 +1,4 @@
- body {
-      background: #0f0f0f;
-      color: #e0e0e0;
-      font-family: 'Segoe UI', sans-serif;
-      padding-top: 80px; /* header ki height adjust */
-    }
-    .navbar {
-      background: #181818;
-    }
-    .navbar .nav-link {
-      color: #e0e0e0 !important;
-      margin: 0 5px;
-      font-weight: 300;
-    }
-    .navbar .nav-link:hover {
-      color: #3ea6ff !important;
-    }
-    .blog-card {
-      background: #181818;
-      border: 1px solid #333;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      transition: transform 0.3s;
-    }
-    .blog-card:hover {
-      transform: translateY(-4px);
-    }
-    .blog-card h3 {
-      color: #3ea6ff;
-      font-size: 22px;
-    }
-    .blog-card img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-    .status-badge {
-      font-size: 12px;
-      padding: 3px 8px;
-      border-radius: 5px;
-      margin-left: 8px;
-    }
-    .status-published { background: #28a745; color: #fff; }
-    .status-draft { background: #ffc107; color: #000; }
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -162,4 +118,14 @@
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}
+footer a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107; /* hover pe blue */
+  text-decoration: underline; /* underline bhi aa jayega hover pe */
 }
